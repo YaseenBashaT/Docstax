@@ -1,0 +1,233 @@
+/* Define reusable variables */
+:root {
+  --primary-color: #2f163d;
+  --secondary-color: #fff;
+  --highlight-color: #d091f1;
+}
+
+/* Font */
+@font-face {
+  font-family: openSans;
+  src: url(fonts/open-sans.light.ttf);
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: openSans, sans-serif;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 130px;
+  font-size: 3.7em;
+  padding: 50px;
+}
+
+header p {
+  padding: 20px;
+  font-size: larger;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 0;
+  position: fixed;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+a:hover {
+  background-color: var(--highlight-color);
+}
+
+/* Hero section styles */
+.heroImg {
+  width: 70%;
+  padding: 60px;
+  border-radius: 7%;
+}
+
+/* Services section styles */
+.services {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 70px;
+}
+
+.services li::before {
+  content: '\2713';
+  color: purple;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+.button-icon {
+  display: flex;
+  border: 3px  var(--secondary-color) solid;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.icon {
+  background-color:  var(--secondary-color);
+  padding: 10px 10px 5px 10px;
+}
+
+.icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cube {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 20px;
+}
+
+.button-icon:hover {
+  border-color:var(--highlight-color);
+}
+
+.button-icon:hover .cube {
+  transform: rotateX(90deg);
+}
+
+.side {
+  position: absolute;
+  height: 47px;
+  width: 200px;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.top {
+  background: #a44cd3;
+  color:  var(--secondary-color);
+  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+}
+
+.front {
+  background: #222229;
+  color:  var(--secondary-color);
+  transform: translate3d(0, 0, 1em);
+}
+
+/* Section styles */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 180px;
+}
+
+section div {
+  width: 35%;
+  padding: 50px;
+  line-height: 2em;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 2.5em;
+  padding: 20px;
+}
+
+section img {
+  width: 35%;
+  height: 45%;
+}
+
+/* Footer styles */
+#main-footer {
+  background-color: #f4e3f7;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.footer-button {
+  text-decoration: none;
+  color: #1e161f;
+  margin-right: 10px;
+  transition: color 0.1s ease;
+}
+
+.footer-button:hover {
+  color: #000000;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6c757d;
+}

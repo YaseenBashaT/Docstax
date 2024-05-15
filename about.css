@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    margin: 10px;    
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #2f163d;
+    color: #fff;
+    padding: 10px 0;
+}
+h2{
+    margin-top: 100px;
+    font-size: 3.7em;
+    padding: 50px;
+}
+/* footer */
+#main-footer {
+    background-color: #f4e3f7;
+    padding: 30px 0;
+    width: 100%;
+    margin-top: 415px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+  }
+  
+  .footer-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .footer-button {
+    text-decoration: none;
+    color: #1e161f;
+    margin-right: 10px;
+    transition: color 0.1s ease;
+  }
+  
+  .footer-button:hover {
+    color: #000000;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
